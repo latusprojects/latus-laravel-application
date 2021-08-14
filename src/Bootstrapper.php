@@ -21,7 +21,13 @@ class Bootstrapper
 
     public function addBaseProviders(array|string $baseProviders)
     {
-        $this->baseProviders += $baseProviders;
+        if (is_array($baseProviders)) {
+            $this->baseProviders += $baseProviders;
+            return;
+        }
+
+        $this->baseProviders[] = $baseProviders;
+
     }
 
     public function build()
@@ -48,9 +54,11 @@ class Bootstrapper
         );
     }
 
-    public function finish()
+    public function finish(): Application
     {
         $this->app->boot();
+
+        return $this->app;
     }
 
     public function getApp(): Application|null
