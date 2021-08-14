@@ -54,9 +54,11 @@ class Bootstrapper
         );
     }
 
-    public function finish()
+    public function finish(): Application
     {
         $this->app->boot();
+
+        return $this->app;
     }
 
     public function getApp(): Application|null
