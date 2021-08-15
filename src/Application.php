@@ -12,9 +12,11 @@ class Application extends LaravelApplication
 
     public function __construct($basePath = null, array $additionalBaseProviders = [])
     {
-        parent::__construct($basePath);
 
         $this->additionalBaseProviders = $additionalBaseProviders;
+        
+        parent::__construct($basePath);
+
     }
 
     protected function registerBaseServiceProviders()
