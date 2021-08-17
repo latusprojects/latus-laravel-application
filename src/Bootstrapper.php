@@ -2,6 +2,7 @@
 
 namespace Latus\Laravel;
 
+use Illuminate\Support\Facades\Facade;
 use Latus\Laravel\Exceptions\Handler;
 use Latus\Laravel\Http\Kernel as HttpKernel;
 use Latus\Laravel\Console\Kernel as ConsoleKernel;
@@ -34,6 +35,7 @@ class Bootstrapper
     {
         $this->app = new Application($this->basePath, $this->baseProviders);
         $this->createBaseBindings();
+        Facade::setFacadeApplication($this->app);
     }
 
     protected function createBaseBindings()
