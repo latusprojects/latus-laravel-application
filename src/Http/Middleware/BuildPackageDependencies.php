@@ -8,8 +8,20 @@ use Latus\UI\Events\AdminNavDefined;
 class BuildPackageDependencies
 {
 
+    protected static array $middlewareDependencyClosures = [];
+
+    public static function addDependencyClosure(\Closure $closure)
+    {
+        self::$middlewareDependencyClosures[] = $closure;
+    }
+
     public function handle()
     {
+
+        foreach (self::$middlewareDependencyClosures as $closure) {
+            $closure();
+        }
+
         if (app()->bound('admin-nav')) {
             $this->dispatchAdminNavDefinedEvent();
         }
