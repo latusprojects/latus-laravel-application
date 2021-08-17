@@ -2,6 +2,8 @@
 
 namespace Latus\Laravel\Http;
 
+use Latus\Laravel\Http\Middleware\BuildPackageDependencies;
+
 class Kernel extends \Illuminate\Foundation\Http\Kernel
 {
     /**
@@ -17,6 +19,7 @@ class Kernel extends \Illuminate\Foundation\Http\Kernel
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \Latus\Laravel\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+        BuildPackageDependencies::class,
     ];
 
     /**
