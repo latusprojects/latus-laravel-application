@@ -11,7 +11,7 @@
   "require": {
     "php": "^8.0",
     "laravel/framework": "8.*",
-    "latusprojects/latus": "0.1.*"
+    "latusprojects/latus-ui": "0.1.*"
   },
   "require-dev": {
     "orchestra/testbench": "v6.19.0"
