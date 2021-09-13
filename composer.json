@@ -21,6 +21,15 @@
       "Latus\\Laravel\\": "src/"
     }
   },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Latus\\Laravel\\Providers\\AuthServiceProvider",
+        "Latus\\Laravel\\Providers\\EventServiceProvider",
+        "Latus\\Laravel\\Providers\\RouteServiceProvider"
+      ]
+    }
+  },
   "repositories": {
     "0": {
       "type": "composer",
