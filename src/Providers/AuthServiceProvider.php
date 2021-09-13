@@ -2,7 +2,6 @@
 
 namespace Latus\Laravel\Providers;
 
-use Illuminate\Contracts\Auth\UserProvider;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Auth;
 
