@@ -27,7 +27,7 @@ class BuildPackageDependencies
     {
 
         foreach (self::$middlewareDependencyClosures as $closure) {
-            $closure();
+            app()->call($closure);
         }
 
         return $next($request);
