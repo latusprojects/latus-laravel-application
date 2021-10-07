@@ -10,7 +10,9 @@
   ],
   "require": {
     "php": "^8.0",
-    "laravel/framework": "8.*"
+    "laravel/framework": "8.*",
+    "latusprojects/latus-installer": "^0.2.7",
+    "latusprojects/latus-composer-plugins": "^0.2.15"
   },
   "require-dev": {
     "orchestra/testbench": "v6.19.0"
