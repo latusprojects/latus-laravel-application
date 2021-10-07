@@ -2,6 +2,8 @@
 
 namespace Latus\Laravel\Http;
 
+use Latus\ComposerPlugins\Http\Middleware\DispatchPackageEvents;
+use Latus\Installer\Http\Middleware\DisableWebInstallerAfterInstall;
 use Latus\Laravel\Http\Middleware\BuildPackageDependencies;
 
 class Kernel extends \Illuminate\Foundation\Http\Kernel
@@ -20,6 +22,8 @@ class Kernel extends \Illuminate\Foundation\Http\Kernel
         \Latus\Laravel\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         BuildPackageDependencies::class,
+        DisableWebInstallerAfterInstall::class,
+        DispatchPackageEvents::class
     ];
 
     /**
