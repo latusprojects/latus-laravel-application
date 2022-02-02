@@ -25,7 +25,6 @@ class BuildPackageDependencies
      */
     public function handle(Request $request, Closure $next): mixed
     {
-
         foreach (self::$middlewareDependencyClosures as $closure) {
             app()->call($closure);
         }

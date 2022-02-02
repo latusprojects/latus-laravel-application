@@ -27,6 +27,9 @@
       "providers": [
         "Latus\\Laravel\\Providers\\RouteServiceProvider"
       ]
+    },
+    "branch-alias": {
+      "dev-develop": "0.1.x-dev"
     }
   },
   "repositories": {
