@@ -6,6 +6,7 @@ use Latus\ComposerPlugins\Http\Middleware\DispatchPackageEvents;
 use Latus\Installer\Http\Middleware\DisableWebInstallerAfterInstall;
 use Latus\Laravel\Http\Middleware\BuildPackageDependencies;
 use Latus\Laravel\Http\Middleware\ExposeTranslations;
+use Latus\Permalink\Http\Middleware\SetRequestUri;
 
 class Kernel extends \Illuminate\Foundation\Http\Kernel
 {
@@ -26,6 +27,7 @@ class Kernel extends \Illuminate\Foundation\Http\Kernel
         DisableWebInstallerAfterInstall::class,
         DispatchPackageEvents::class,
         ExposeTranslations::class,
+        SetRequestUri::class,
     ];
 
     /**
