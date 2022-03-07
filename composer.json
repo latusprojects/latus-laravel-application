@@ -10,7 +10,7 @@
   ],
   "require": {
     "php": "^8.0",
-    "laravel/framework": "8.*",
+    "laravel/framework": "^9",
     "latusprojects/latus-installer": "^0.2.7",
     "latusprojects/latus-composer-plugins": "^0.2.15",
     "latusprojects/latus-permalink": "^0.1.0"
@@ -28,101 +28,6 @@
       "providers": [
         "Latus\\Laravel\\Providers\\RouteServiceProvider"
       ]
-    },
-    "branch-alias": {
-      "dev-develop": "0.1.x-dev"
-    }
-  },
-  "repositories": {
-    "settings": {
-      "type": "path",
-      "url": "D:\\latus-projects\/laravel-packages\/latus-settings",
-      "symlink": true
-    },
-    "model-repositories": {
-      "type": "path",
-      "url": "D:\\latus-projects\/laravel-packages\/latus-model-repositories",
-      "symlink": true
-    },
-    "latus": {
-      "type": "path",
-      "url": "D:\\latus-projects\/laravel-packages\/latus",
-      "symlink": true
-    },
-    "application": {
-      "type": "path",
-      "url": "D:\\latus-projects\/laravel-packages\/latus-laravel-application",
-      "symlink": true
-    },
-    "permalink": {
-      "type": "path",
-      "url": "D:\\latus-projects\/laravel-packages\/latus-permalink",
-      "symlink": true
-    },
-    "content": {
-      "type": "path",
-      "url": "D:\\latus-projects\/laravel-packages\/latus-content",
-      "symlink": true
-    },
-    "ui-dev": {
-      "type": "path",
-      "url": "D:\\latus-projects\/laravel-packages\/latus-ui",
-      "symlink": true
-    },
-    "installer-dev": {
-      "type": "path",
-      "url": "D:\\latus-projects\/laravel-packages\/latus-installer",
-      "symlink": true
-    },
-    "composer-plugins-dev": {
-      "type": "path",
-      "url": "D:\\latus-projects\/laravel-packages\/latus-composer-plugins",
-      "symlink": true
-    },
-    "plugins-dev": {
-      "type": "path",
-      "url": "D:\\latus-projects\/laravel-packages\/latus-plugins",
-      "symlink": true
-    },
-    "base-plugin-dev": {
-      "type": "path",
-      "url": "D:\\latus-projects\/laravel-packages\/latus-base-plugin",
-      "symlink": true
-    },
-    "plugin-api-dev": {
-      "type": "path",
-      "url": "D:\\latus-projects\/laravel-packages\/latus-plugin-api",
-      "symlink": true
-    },
-    "lh-plugin-dev": {
-      "type": "path",
-      "url": "D:\\leasing-hoping\/laravel-packages\/latus-lh-plugin",
-      "symlink": true
-    },
-    "permissions": {
-      "type": "path",
-      "url": "D:\\latus-projects\/laravel-packages\/latus-permissions",
-      "symlink": true
-    },
-    "bs-dev": {
-      "type": "path",
-      "url": "D:\\latus-projects\/laravel-packages\/laravel-bootstrap-components",
-      "symlink": true
-    },
-    "lh-theme-dev": {
-      "type": "path",
-      "url": "D:\\leasing-hoping\/laravel-packages\/latus-lh-theme",
-      "symlink": true
-    },
-    "permalinks": {
-      "type": "path",
-      "url": "D:\\latus-projects\/laravel-packages\/latus-permalink",
-      "symlink": true
-    },
-    "0": {
-      "type": "composer",
-      "url": "https:\/\/latusprojects.repo.repman.io",
-      "symlink": true
     }
   },
   "minimum-stability": "dev"
