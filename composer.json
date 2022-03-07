@@ -10,7 +10,7 @@
   ],
   "require": {
     "php": "^8.0",
-    "laravel/framework": "8.*",
+    "laravel/framework": "^9",
     "latusprojects/latus-installer": "^0.2.7",
     "latusprojects/latus-composer-plugins": "^0.2.15",
     "latusprojects/latus-permalink": "^0.1.0"
